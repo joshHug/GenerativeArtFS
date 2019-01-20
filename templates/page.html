@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Social Implications of Computing: {{ title }}</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container formatting */
+      .container {
+        margin: 0 auto;
+      }
+      .container h1 {
+        font-size: 24px;
+      }
+      .container h2 {
+        font-size: 20px;
+      }
+      .container h3 {
+        font-size: 16px;
+      }
+
+      /* Custom strong */
+      .container strong:before,strong:after {
+        content: "\2605";
+      }
+      .container strong {
+        color: darkred;
+      }
+
+      /* Here be hacked styles for the assignments table. */
+      table {
+          width: 100%;
+          border: 1px solid black;
+          text-align: center;
+          margin: 0 0 10px;
+          line-height: 30px;
+      }
+      tr {
+          border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span4">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li><a href="index.html">Schedule</a></li>
+              <li><a href="about.html">Course Info</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1Gici1txeN5YRgAWf43LlrpA78TCr12QX">Lecture Slides</a></li>
+              <li class="nav-header">Class Meeting</li>
+              <li>Monday, 3:30-5:00 in Sibley Auditorium</p>
+              <li class="nav-header">Office Hours</li>              
+              <li>Monday 1:00-3:00, 779 Soda</li>
+
+              <li class="nav-header">Piazza</li>
+              Sign up <a href="http://piazza.com/berkeley/fall2018/cs195">here</a></li>
+            </ul>
+          </div><!--/well-->
+        </div><!--/span-->
+
+        <div class="span8">
+          <div class="row-fluid">
+            <div class="span2">
+            <img src="assets/images/header_intersectionconsulting.jpg"
+                 style="width:100px;height=100px">
+            </div>
+            <div class="span10">
+                <h1>Social Implications of Computing</h1>
+                <h2>CS 195, Fall 2018</h2>
+            </div>
+          </div><!--/row-->
+
+          <hr>
+
+          <div class="row-fluid">
+            <h2> {{ title }} </h2>
+            {{ :all }}
+          </div>
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+      </footer>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
